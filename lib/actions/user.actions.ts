@@ -105,7 +105,7 @@ export const signUp = async ({ password, ...userData }: SignUpParams) => {
   }
 }
 
-export async function getLoggedInUser() {
+export async function  getLoggedInUser() {
   try {
     const { account } = await createSessionClient();
     const result = await account.get();
